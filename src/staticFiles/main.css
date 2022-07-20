@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: 200,300,400,500,600,700,800,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://wallpaperaccess.com/full/1567836.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+}
+
+.container{
+  margin-top: 4px;
+  margin-left: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+.container .card{
+  position: relative;
+  width: 600px;
+  height: 340px;
+  box-shadow: inset 5px 5px 5px rgba(0,0,0,0.05),
+              inset -5px -5px 5px rgba(255,255,255,0.5),
+              5px 5px 5px rgba(0,0,0,0.5),
+              -5px -5px 5px rgba(255,255,255,0.5);
+  border-radius: 15px;
+  margin: 30px;
+  background-color:#ecf0f3;
+}
+.container .card .box{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+ 
+  background: linear-gradient(45deg,#00FFFF,#00B9F2);
+  box-shadow: 0 10px 20px rga(0,0,0,0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+.container .card:hover .box{
+  transform: translateY(-50px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  background: linear-gradient(45deg,#b95ce4,#4f29cd)
+}
+.container .card .box .content{
+  padding: 20px;
+  text-align: center;
+}
+.container .card .box .content h1{
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8em;
+  color: rgba(0,0,0,0.05);
+  transition: 0.5s;
+  pointer-events: none;
+}
+.container .card:hover .box .content h2{
+  color: rgba(0,0,0,0.05);
+}
+.container .card:hover .box .content h3{
+  font-size: 1.8em;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card:hover .box .content p{
+  font-size: 1em;
+  font-weight: 300;
+  color: #777;
+  z-index: 1;
+  transition: 0.5s;
+}
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+  color: #fff;
+}
+.container .card .box .content a{
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: linear-gradient(45deg,#00B9F2,#00FFFF);
+  margin-top: 15px;
+  border-radius: 20px;
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.container .card:hover .box .content a{
+  background: #ff568f;
+  color: white;
+  font-weight:600;
+}
+
+
+
+nav{
+  margin-top: 3px;
+  margin-bottom: 0px;
+  width: 100%;
+  padding: 12px 0;
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1,
+             inset -3px -3px 7px #ffffff,
+             inset 3px 3px 5px #ceced1;
+}
+nav .menu{
+  
+  max-width: 1270px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo a{
+  font-size: 28px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #31344b;
+}
+.menu ul{
+  list-style: none;
+  display: flex;
+}
+.menu ul a{
+  margin:0 8px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #31344b;
+  font-weight: 400;
+  display: inline-flex;
+  padding: 10px 12px;
+ box-shadow: -3px -3px 7px #ffffff,
+            3px 3px 5px #ceced1;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.menu ul a:hover:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.footer{
+  height:55px;
+  margin: none;
+  width: 100%;
+  padding: 12px 0;
+  background: #ecf0f3;
+  box-shadow: -3px -3px 7px #ffffff,
+             3px 3px 5px #ceced1,
+             inset -3px -3px 7px #ffffff,
+             inset 3px 3px 5px #ceced1;
+             
+}
+.fmenu{
+  max-width: 1270px;
+  padding-left: 2px;
+  padding-right: 0px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fmenu ul{
+  list-style: none;
+  display: flex;
+  margin-bottom:23px;
+  margin-left: 5px;
+ 
+}
+
+.fmenu ul a{
+  
+  height: 32px;
+  
+  text-decoration: none;
+  font-size: 12px;
+  color: #31344b;
+  font-weight: 600;
+  display: inline-flex;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+ box-shadow: -3px -3px 7px #ffffff,
+            3px 3px 5px #ceced1;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.fmenu ul a:hover:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset -3px -3px 7px #ffffff,
+              inset 3px 3px 5px #ceced1;
+}
+.fmenu ul a:hover{
+  color: #00B9F2;
+  
+}
+
+.menu ul a:hover{
+  color: #00B9F2;
+}
+nav label.btn{
+  color: #31344b;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+}
+nav label.cancel{
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+#check{
+  display: none;
+}
+@media (max-width:940px) {
+  .menu ul{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    max-width: 400px;
+    padding-top: 45px;
+    height: 100%;
+    background: #ecf0f3;
+    box-shadow: 0 5px 10px #b0b0b5;
+    z-index: 12;
+    transition: all 0.3s ease;
+  }
+  .menu ul a{
+   display: block;
+   font-size: 23px;
+   width: 100%;
+   margin-top: 30px;
+   box-shadow: none;
+   text-align: center;
+  }
+  .menu ul a:hover:before{
+    box-shadow: none;
+  }
+  nav label.bars{
+    display: block;
+  }
+  #check:checked ~ label.bars{
+    display: none;
+  }
+  #check:checked ~ ul label.cancel{
+    display: block;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
